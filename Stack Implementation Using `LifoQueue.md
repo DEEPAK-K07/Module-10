@@ -1,29 +1,40 @@
-# Stack Implementation Using `LifoQueue` (Max Size 7) 🔄
+# Stack Implementation Using LifoQueue (Max Size 7) 🔄
 
-This Python program demonstrates a stack implemented using the `LifoQueue` class from the `queue` module. It allows up to 7 elements, checks if the stack is full, and then prints the elements in reverse (LIFO) order.
+This Python program demonstrates a stack implemented using the LifoQueue class from the queue module. It allows up to 7 elements, checks if the stack is full, and then prints the elements in reverse (LIFO) order.
 
 ## 🎯 Aim
 
 To create a Python program that:
-- Implements a stack using `LifoQueue` with a maximum size of 7
+- Implements a stack using LifoQueue with a maximum size of 7
 - Adds user-inputted values to the stack
 - Checks whether the stack is full
 - Prints the stack elements in reverse order (LIFO)
 
 ## 📋 Algorithm
 
-1. Import the `LifoQueue` class from the `queue` module.
+1. Import the LifoQueue class from the queue module.
 2. Create a stack with a maximum size of 7.
-3. Read the number of elements (`n`) to be added to the stack.
-4. Loop `n` times:
+3. Read the number of elements (n) to be added to the stack.
+4. Loop n times:
    - Read a value from the user.
-   - Use `put()` to push it onto the stack if it's not full.
-5. Use `full()` to check if the stack is full and print the result.
-6. Use `get()` repeatedly to pop and print elements in reverse order.
+   - Use put() to push it onto the stack if it's not full.
+5. Use full() to check if the stack is full and print the result.
+6. Use get() repeatedly to pop and print elements in reverse order.
 
 ## Program
-Add Code Here
+
+  from queue import LifoQueue
+  stack = LifoQueue(maxsize=7)
+  n= int(input())
+  for i in range(n):
+      stack.put(input())
+  print(stack.full())
+  for i in range(n):
+      print(stack.get())
+
 
 ## 🧪 Sample Input and Output
+![image](https://github.com/user-attachments/assets/05e20587-542b-4fd4-9943-f0f13e78aebf)
 
 ## Result:
+Thus, the program has been execueted successfully.
